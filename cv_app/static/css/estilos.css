@@ -1,0 +1,126 @@
+#page1{
+    height: 100vh;
+    background-color: #333;
+    background-image: url(../image/fondocv.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+#fotocv{
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+}
+h1{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+
+#programas {
+   text-decoration: none;
+   font-size: 15px;
+}
+#cv{
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#cv:hover{
+    background-color: white;
+    color: #333; 
+    font-size: 20px;
+    padding: 7px;
+}
+#cvlink{
+    display: inline-block;
+  border-radius: 4px;
+  background-color: #333;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 45px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    
+}
+#cvlink:hover{
+    background-color: white;
+    color: #333; 
+    font-size: 20px;
+    padding: 7px;
+}
+
+#logo{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}
+#edu{
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+#tec{
+    font-size: 50px;
+}
+#tec:hover{
+    font-size: 55px;
+
+}
+#Conocimientos{
+    font-size: 70px;
+}
+.nav-item{
+    font-size: 12px;
+}
+.nav-item:hover {
+    font-size: 15px;
+}
+#contacto{
+    background-color: #333;
+}
+#btnContacto{
+    width: 200px;
+}
+#btnContacto:hover {
+    background-color: #333;
+    color: white;
+    
+}
+#cont{
+    font-size: 50px;
+    text-decoration: none;
+    color: #333;
+}
+#cont:hover{
+    font-size: 60px;
+    color: black;
+}
+#divSaludo{
+    text-align: center;
+    background-color: #333;
+    height: 100vh;
+    color: white;
+}
+#like{
+    font-size: 150px;
+}
+#like:hover{
+    font-size: 170px;
+}
+#experiencia{
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+

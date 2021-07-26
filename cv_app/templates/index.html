@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '../static/css/estilos.css' %}" />
+   
+    <!--Fontawesome-->
+   <script src="https://kit.fontawesome.com/88ff99f709.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+   
+    <link rel="stylesheet" href="{% static '../static/css/bootstrap.min.css' %}">
+   
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100&display=swap" rel="stylesheet">
+
+    <title>Pablo Abagnale</title>
+</head>
+
+<body>    
+{% include 'barra.html' %}
+
+<main class="container-fluid">
+  <!--Home-->
+  <div id="page1" class="p-4 p-md-5 mb-4 text-white rounded ">
+   
+    <div class="row">
+        <div class="col-8">
+          <h1 id="home" class="display-2 fst-italic">Hola Mundo </h1>
+          <h2 class="display-6 fst-italic">bienvenidos a mi pagina </h2>
+          <p class="lead my-3">Soy un estudiante de la Tecnicatura en programación universitaria de la UTN, participo del bootcamp fullStack con Python y soy autodidacta sobre la programación web y la ciberseguridad. <br>
+           Aunque se que me falta mucho por aprender siempre voy buscando oportunidades de hacerlo.</p>
+    
+        
+      </div>
+         <!--foto perfil
+      <div  class="col-3 d-none d-lg-block text-center "><img id="fotocv" src="{% static '../static/image/foto cv.jpg' %}" alt=""></div>
+      -->
+      </div>
+    <!--Boton CV-->
+          <div class="row">
+            <div class="col-3 col-sm-6">
+            <a href="{% static '../static/archivos/Pablo Abagnale CV.pdf' %}" target = "_Blank" > <button id = "cv"class = "border border-3 rounded-pill" >Descarga mi CV <i class="fas fa-download"></i> </button> </a>
+            </div>            
+          </div> 
+          
+       
+ </div>
+
+
+  <!--Educación-->
+  <div id = "edu" class="container-fluid p-3"><h2><i class="fas fa-university"></i> Educación</h2></div>
+  <div class="row mb-2">
+    <!--UTN-->
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">UTN San Francisco</strong>
+          <h3 class="mb-0">Técnico Universitario en Programación</h3>
+          <div class="mb-1 text-muted">Marzo 2021 - Actualidad </div>
+          <p class="card-text mb-auto">Si bien di mis primeros pasos en la programación autodidacta, gracias a esta carrera pude no solo formalizar mis estudios si no también estructurar mi formación autodidacta</p>
+          <p>Actualmente tengo el 30% de la carrera <br>Promedio general de 9 </p>
+          <p>Contenido relevante:</p>
+          <ul>
+          <li>Lógica de programación</li>
+          <li>C#</li>
+          </ul>
+          <a href="https://sac.sanfrancisco.utn.edu.ar/documentos/archivos/Plan%20de%20estudio/plan2003_tecnicatura_universitaria_en_programacion.pdf" class="stretched-link" target = "_Blank" >Programa</a>
+        </div>
+        <div class="col-3 d-none d-lg-block">
+          <img id = "logo" src="{% static '../static/image/utn.svg' %}" alt="UTN">
+        </div>
+      </div>
+    </div>
+  <!--Boot-->
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Educación IT</strong>
+          <h3 class="mb-0">Bootcamp FullStack con Python</h3>
+          <div class="mb-1 text-muted">Abril 2021 - Actualidad</div>
+          <p class="mb-auto">Parte del programa Digit@lers de Telecom y educación IT.</p><br><br>
+          <p></p>
+          <p>Módulos completados :</p>
+          <ul>
+          <li>HTML5: Fundamentos web</li>
+          <li>Javascript desde Cero</li>
+          <li>Python desde Cero</li>
+          <li>Introducción a base de datos</li>
+          <li>POO</li>
+          </ul>
+          <a href="http://www.digitalers.com.ar/pdf/4-Desarrollador_Full_Stack_con_Python.pdf" class="stretched-link"  target = "_Blank" >Programa</a>
+        </div>
+        <div  class="col-3 d-none d-lg-block">
+          <img id = "logo" src="{% static '../static/image/logo-it.jpg' %}" alt="educaciónIT"  >
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--skills -->
+<div id = "edu" class="container-fluid p-3"><h2><i class="fas fa-toolbox"></i> Herramientas</h2></div>
+ <div class="parte2 pt-2 pb-5"><!--Parte tecnologias-->
+        <div id="formación" class="container">
+            <div class="row p-3"><div class="col-12 text-center col-sm-4"><h2>Tecnologias de programación</h2></div></div>
+            <div class="row ">
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-html5"></i><br><h6>HTML 5</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-css3-alt"></i><br><h6>CSS 3</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-bootstrap"></i><br><h6>Bootstrap</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-github"></i></i><br><h6>GITHub</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-python"></i><br><h6>Python/Django</h6> </div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-linux"></i><br><h6>Linux</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-database"></i><br><h6>DDBB Relacionales</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-js"></i><br><h6>Javascript</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-pen-nib"></i><br><h6>Illustraitor/Photoshop</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-laptop-code"></i><br><h6>C#</h6></div>
+            </div>
+        </div>
+    </div>
+
+      <div class="parte3 pt-3 pb-5"><!--Parte conocimientos-->
+        <div class="container">
+          <div class="row p-2"><div class="col-12 text-center col-sm-4"><h2>Otros conocimientos</h2></div></div>
+            <div class="row ">
+                <div class="col-12 col-sm-1 "></div>
+                <div class="col-11 col-sm-4 card mx-2">
+                    <div class="row border border-5">
+                        <div class="col-4 con "><i id="Conocimientos" class="fas fa-language"></i></div>
+                        <div class="col-8 contxt"><p id="contxt"><br><strong>Open English</strong><br>Inglés A2 <br> Español Nativo </p></div>
+                    </div>
+                </div> 
+                <div class="col-11 col-sm-4 card mx-2">
+                    <div class="row border border-5">
+                        <div class="col-4 con"><i id="Conocimientos" class="fas fa-mail-bulk"></i></div>
+                        <div class="col-8"> <p id="contxt"> Mundos E <br> <strong>Diplomatura en Marketing digital</strong>  <br> Marzo - Abril 2017 <br><a href="https://www.mundose.com/product/marketing-digital-online-vivo/" target="_Blank">Progrma</a></p></div>
+                    </div>
+                </div>  
+                <div class="col-12 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <!--Experiencia --> 
+    <div id = "experiencia" class="container-fluid p-3"><h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2></div>
+  <div class="row mb-2">
+    <!--Sueprvisor-->
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Konecta</strong>
+          <h3 class="mb-0">Supervisor de operaciones (líder) omnicanal</h3>
+          <div class="mb-1 text-muted">Diciembre2017 al Julio 2020 </div>
+          <p class="card-text mb-auto">Manejo, coaching y capacitación del equipo a cargo,armado y
+                                        seguimiento de los planes de acción según la metodología de
+                                        causa raíz, Armado Y asignación de francos,horarios,vacaciones,
+                                        etc. entre otras tareas</p>
+        </div>
+        <div class="col-3 d-none d-lg-block">
+          <img id = "logo" src="{% static '../static/image/konecta.png' %}" alt="Konecta" width: 100px; >
+        </div>
+      </div>
+    </div>
+  <!--Konecta-->
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Allus / Konecta</strong>
+          <h3 class="mb-0">Rep de atención al cliente omnicana</h3>
+          <div class="mb-1 text-muted">Marzo del 2014 al Diciembre2017</div>
+          <p class="mb-auto">Atención de contacto y resolución de problemas de los clientes
+                              durante la venta y posventa de diferentes productos y servicios a
+                              través de RRSS,Canales Digitales y telefónicos</p><br><br>
+        </div>
+        <div  class="col-3 d-none d-lg-block">
+          <img id = "logo" src="{% static '../static/image/konecta.png' %}" alt="Konecta" width: 100px; >
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Hobbies-->
+  <div id = "edu" class="container-fluid p-3"><h2><i class="fas fa-toolbox"></i> Hobbies</h2></div>
+ <div class="parte2 pt-2 pb-5"><!--Parte tecnologias-->
+        <div id="formación" class="container">
+            <div class="row ">
+                <div class="col-3 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fab fa-playstation"></i><br><h6>Play Station</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-book"></i><br><h6>Lectura</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-quidditch"></i><br><h6>Deportes</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-laptop-code"></i><br><h6>Autodidacta</h6></div>
+                <div class="col-6 col-sm-2 card m-sm-1 text-center py-2 border border-5"><i id="tec" class="fas fa-dice"></i><br><h6>Juegos de mesa</h6></div>
+            </div>
+        </div>
+    </div>
+    <!--Contacto --> 
+    {% include 'contacto.html' %}
+    </main>
+</body>
+
+{% include 'futter.html' %}
+
+
+<script src="{% static '../static/js/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static '../static/js/bootstrap.bundle.min.js' %}"></script>
+</html>
